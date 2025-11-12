@@ -1,0 +1,108 @@
+/* ===== Team Section Base ===== */
+.co_team_section {
+  display: flex;
+  flex-direction: column;
+  padding-left: 18%;
+  padding-right: 18%;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+
+}
+.co_team_container {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+
+}
+.next_section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px;
+  padding-left: 15%;
+  padding-right: 15%;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+}
+.team_section {
+  min-height: 100vh;
+  background-color: #0a0a0a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.team_heading {
+  color: #fff;
+  font-size: 4.5em;
+    font-weight: 600;
+  font-family: "Times New Roman", serif;
+  margin-bottom: 40px;
+}
+
+/* ===== Refined Lucide Scroll Arrows (Fade Flow Effect) ===== */
+.arrow-stack {
+  position: relative;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 60px; /* tighter spacing area */
+  cursor: pointer;
+}
+
+/* Base arrow style */
+.arrow {
+  position: absolute;
+  width: 1.8rem;
+  height: 1.8rem;
+  stroke: #ffffff;
+  stroke-width: 1.6;
+  opacity: 0;
+  transform: translateY(0);
+  animation: fadeFlow 1.8s ease-in-out infinite;
+  transition: stroke 0.3s ease, filter 0.3s ease;
+}
+
+/* Closer stacking between arrows */
+.a1 {
+  top: 0;
+  animation-delay: 0s;
+}
+.a2 {
+  top: 10px;
+  animation-delay: 0.3s;
+}
+.a3 {
+  top: 20px;
+  animation-delay: 0.6s;
+}
+
+/* Smooth fading sequence */
+@keyframes fadeFlow {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.8;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* ===== Hover Glow Effect ===== */
+.arrow-stack:hover .arrow {
+  stroke: #00ffcc;
+  filter: drop-shadow(0 0 8px rgba(0, 255, 204, 0.6));
+  animation-duration: 1.2s;
+}
