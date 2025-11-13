@@ -15,7 +15,14 @@ const Card = ({ frontImage, name, title, isMainMember }) => {
       </div>
 
       {/* Text Section */}
-      <div className="text_box">
+      <div
+        className="text_box"
+        style={{
+          margin: isMainMember ? "0 20px -20px 20px" : "0 60px -20px 60px",
+          fontSize: isMainMember ? "1.5em" : "1.2rem",
+          padding: isMainMember ? "15px 10px" : "6px 2px",
+        }}
+      >
         <h4 className="name">{name}</h4>
       </div>
 

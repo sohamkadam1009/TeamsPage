@@ -92,37 +92,37 @@ const TeamSection = () => {
         <div className="co_team_container">
           <Card
             frontImage={Vinay}
-            name={"Vinay Phadtare"}
+            name={"Vinay\nPhadtare"}
             title={"Accountant Manager"}
             isMainMember={false}
           ></Card>
           <Card
             frontImage={Manisha}
-            name={"Manisha Parmar"}
+            name={"Manisha\nParmar"}
             title={"Accountant & Taxation"}
             isMainMember={false}
           ></Card>
           <Card
             frontImage={Priya}
-            name={"Priya Dodiya"}
+            name={"Priya\nDodiya"}
             title={"Accountant & Taxation"}
             isMainMember={false}
           ></Card>
           <Card
             frontImage={Arshia}
-            name={"Arshia Pehel"}
+            name={"Arshia\nPehel"}
             title={"Brand Manager"}
             isMainMember={false}
           ></Card>
           <Card
             frontImage={Mansi}
-            name={"Mansi Mhatre"}
+            name={"Mansi\nMhatre"}
             title={"Operation Execute"}
             isMainMember={false}
           ></Card>
           <Card
             frontImage={Ayesha}
-            name={"Ayesha Paradiwalla"}
+            name={"Ayesha\nParadiwalla"}
             title={"Research Analyst"}
             isMainMember={false}
           ></Card>
